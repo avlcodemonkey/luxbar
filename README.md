@@ -34,7 +34,7 @@ Then use the HTML code below as a base and see the docs for options.
 ```html
 <div class="luxbar luxbar-static">
     <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
-    <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+    <div class="luxbar-menu luxbar-menu-right">
         <ul class="luxbar-navigation">
             <li class="luxbar-header">
                 <a class="luxbar-brand" href="#">Brand</a>
@@ -52,6 +52,28 @@ Then use the HTML code below as a base and see the docs for options.
         </ul>
     </div>
 </div>
+```
+
+# Themes
+
+This version uses CSS custom properties to handle theming.  By default, it uses the original material cyan theme.  Override these properties to change the theme.
+
+```css
+:root {
+    --luxbar-color-bg: #006064;
+    --luxbar-color-hl: #00838f;
+    --luxbar-color-fg: #fff;
+}
+```
+
+For example, the material red theme.
+
+```css
+:root {
+    --luxbar-color-bg: #b71c1c;
+    --luxbar-color-hl: #c62828;
+    --luxbar-color-fg: #fff;
+}
 ```
 
 # Other
