@@ -1,15 +1,14 @@
 {
   "name": "luxbar",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Featherweight, Responsive, CSS Only Navigation Bar",
   "scripts": {
-    "build": "node-sass scss -o build  && postcss --use autoprefixer build/**/*.css -r && cssnano ./build/luxbar.css > ./build/luxbar.min.css",
-    "postbuild": "copy \"./build/\" \"./\"",
-    "lint": "sass-lint -c ./scsslint.yml -v -q"
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/balzss/luxbar.git"
+    "url": "git+https://github.com/avlcodemonkey/luxbar.git"
   },
   "keywords": [
     "CSS",
@@ -17,10 +16,10 @@
     "Menu",
     "Navigation bar"
   ],
-  "author": "balzss",
+  "author": "avlcodemonkey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/balzss/luxbar/issues"
+    "url": "https://github.com/avlcodemonkey/luxbar/issues"
   },
   "files": [
     "build/",
@@ -28,23 +27,12 @@
     "README.md",
     "LICENSE"
   ],
-  "homepage": "https://balzss.github.io/luxbar",
   "devDependencies": {
-    "node-sass": "^4.4.0",
-    "autoprefixer": "^6.6.1",
-    "postcss-cli": "^2.6.0",
-    "sass-lint": "^1.10.2",
-    "cssnano-cli": "^1.0.5",
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-plugin-transform-es2015-destructuring": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.22.0",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-redux": "^5.0.2",
-    "redux": "^3.6.0",
-    "webpack": "^2.2.1"
+    "autoprefixer": "^6.7.7",
+    "esbuild": "^0.19.4",
+    "esbuild-sass-plugin": "^2.15.0",
+    "eslint": "^8.50.0",
+    "postcss": "^8.4.31",
+    "sass": "^1.68.0"
   }
 }
