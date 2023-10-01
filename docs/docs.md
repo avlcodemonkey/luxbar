@@ -1,3 +1,5 @@
+**Documentation still needs to be updated**
+
 # User documentation
 This is a documentation on the usage of the Luxbar library. If you can't find something you can ask about it [here](https://github.com/balzss/luxbar/issues).
 

@@ -1,3 +1,5 @@
+**Documentation still needs to be updated**
+
 ## Example usage of the dropdown menu:
 More info on customization can be found in the [demo
 page](https://balzss.github.io/luxbar)

@@ -4,30 +4,32 @@ Featherweight, Responsive, CSS Only Navigation bar
 
 ![Screencap](http://i.imgur.com/0eGzsNt.gif)
 
-[Try out all the options at the demo page!](https://balzss.github.io/luxbar)
+This fork is an attempt to modernize Luxbar by using
+- esbuild for faster builds
+- CSS custom properties instead of themes
+- Semantic HTML in favor of CSS classes
 
 # Getting started
 
-Get it with NPM:
+Create build files using
 
 ```
-npm install luxbar
+npm run build
 ```
 
-Or with bower:
+Or:
 
 ```
-bower install luxbar
+npm run watch
 ```
 
-Or use the CDN:
+Reference the built file
+
 ```html
-<link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+<link rel="stylesheet" href="luxbar.css">
 ```
 
-Then head over [to the demo page](https://balzss.github.io/luxbar) to generate your customized HTML code or use
-the one below as a base and see the docs for options. (Demo page is highly
-recommended for the newcomers)
+Then use the HTML code below as a base and see the docs for options.
 
 ```html
 <div class="luxbar luxbar-static">
@@ -53,8 +55,5 @@ recommended for the newcomers)
 ```
 
 # Other
-- If you have any questions maybe it's already answered in [the faq](https://github.com/balzss/luxbar/blob/master/docs/faq.md)
-- If not then post your question to the issue page
-- If you found a bug or have a feature request post it there as well
-- You can message me directly at [balazs.saros@gmail.com](mailto:balazs.saros@gmail.com)
-- Licensed under the MIT license
+
+See [the original repo](https://github.com/balzss/luxbar)
