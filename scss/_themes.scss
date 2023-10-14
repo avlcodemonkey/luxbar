@@ -1,12 +1,5 @@
 @import 'global-variables';
 
-// ******* color variables *******
-:root {
-    --luxbar-color-bg: #3e63ad;
-    --luxbar-color-hl: #2d477d;
-    --luxbar-color-fg: #fff;
-}
-
 .#{$luxbar-css-prefix}-menu,
 .#{$luxbar-css-prefix}-menu .#{$luxbar-css-prefix}-dropdown ul {
     background-color: var(--luxbar-color-bg);

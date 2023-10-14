@@ -19,12 +19,12 @@
     }
 
     .#{$luxbar-css-prefix}-checkbox {
-        &:not(:checked) ~.#{$luxbar-css-prefix}-menu {
+        &:not(:checked) ~ .#{$luxbar-css-prefix}-menu {
             overflow: visible;
         }
 
-        &:checked ~.#{$luxbar-css-prefix}-menu {
-          height: $luxbar-height;
+        &:checked ~ .#{$luxbar-css-prefix}-menu {
+            height: var(--luxbar-height);
         }
     }
 
@@ -33,12 +33,12 @@
     }
 
     .#{$luxbar-css-prefix}-dropdown {
-        height: $luxbar-height;
+        height: var(--luxbar-height);
 
         &:hover > ul {
             position: absolute;
             left: 0;
-            top: $luxbar-height;
+            top: var(--luxbar-height);
             padding: 0;
         }
 

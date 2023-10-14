@@ -2,9 +2,9 @@
 
 %general-hamburger-span {
     display: block;
-    height: $hamburger-line-height;
-    width: $hamburger-width;
-    transition: $luxbar-transition;
+    height: var(--luxbar-hamburger-line-height);
+    width: var(--luxbar-hamburger-width);
+    transition: var(--luxbar-transition);
 }
 
 %hamburger-lines {
@@ -23,7 +23,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: $luxbar-height;
+    height: var(--luxbar-height);
 }
 
 .#{$luxbar-css-prefix}-menu-left {
@@ -41,12 +41,12 @@
 
 .#{$luxbar-css-prefix}-brand {
     font-size: 1.6em;
-    padding: $luxbar-padding;
+    padding: var(--luxbar-padding);
 }
 
 .#{$luxbar-css-prefix}-menu {
-    min-height: $luxbar-height;
-    transition: $luxbar-transition;
+    min-height: var(--luxbar-height);
+    transition: var(--luxbar-transition);
     width: 100%;
 }
 
@@ -68,16 +68,16 @@
 }
 
 .#{$luxbar-css-prefix}-navigation li {
-    height: $luxbar-height;
+    height: var(--luxbar-height);
 
     a {
-        padding: $luxbar-padding;
+        padding: var(--luxbar-padding);
         display: block;
     }
 }
 
 .#{$luxbar-css-prefix}-hamburger {
-    padding: $luxbar-padding;
+    padding: var(--luxbar-padding);
     position: relative;
     cursor: pointer;
 
@@ -104,13 +104,13 @@
 .#{$luxbar-css-prefix}-checkbox {
     display: none;
 
-    &:not(:checked) ~.#{$luxbar-css-prefix}-menu {
+    &:not(:checked) ~ .#{$luxbar-css-prefix}-menu {
         overflow: hidden;
-        height: $luxbar-height;
+        height: var(--luxbar-height);
     }
 
-    &:checked ~.#{$luxbar-css-prefix}-menu {
-        transition: height $luxbar-transition;
+    &:checked ~ .#{$luxbar-css-prefix}-menu {
+        transition: height var(--luxbar-transition);
         height: 100vh;
         overflow: auto;
 
@@ -125,7 +125,7 @@
 .#{$luxbar-css-prefix}-dropdown {
     position: relative;
     height: auto;
-    min-height: $luxbar-height;
+    min-height: var(--luxbar-height);
 
     &:hover > ul {
         position: relative;
@@ -135,13 +135,11 @@
 
     > a {
         &::after {
-            $expand-arrow-height: 0.313rem;
-
             position: absolute;
             content: '';
             right: 0.625rem;
-            top: calc($luxbar-height / 2 - $expand-arrow-height + 0.063rem);
-            border-width: $expand-arrow-height $expand-arrow-height 0;
+            top: calc(var(--luxbar-height) / 2 - var(--luxbar-expand-arrow-height) + 0.063rem);
+            border-width: var(--luxbar-expand-arrow-height) var(--luxbar-expand-arrow-height) 0;
             border-color: transparent;
             border-style: solid;
         }
@@ -155,12 +153,12 @@
 
         li {
             min-width: 100%;
-            height: calc($luxbar-height / 2);
+            height: calc(var(--luxbar-height) / 2);
             padding: 0.313rem 0.625rem 0.313rem 4rem;
 
             a {
-                min-height: calc($luxbar-height / 2);
-                line-height: calc($luxbar-height / 2);
+                min-height: calc(var(--luxbar-height) / 2);
+                line-height: calc(var(--luxbar-height) / 2);
                 padding: 0;
             }
         }

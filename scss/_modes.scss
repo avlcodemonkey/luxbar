@@ -3,12 +3,12 @@
 .#{$luxbar-css-prefix}-default {
     width: 100%;
     position: relative;
-    box-shadow: $luxbar-shadow;
+    box-shadow: var(--luxbar-shadow);
     z-index: 1000;
 }
 
 .#{$luxbar-css-prefix}-static {
-    box-shadow: $luxbar-shadow;
+    box-shadow: var(--luxbar-shadow);
     width: 100%;
     position: absolute;
     top: 0;
@@ -16,7 +16,7 @@
     z-index: 1000;
 
     .#{$luxbar-css-prefix}-checkbox {
-        &:checked ~.#{$luxbar-css-prefix}-menu {
+        &:checked ~ .#{$luxbar-css-prefix}-menu {
             position: absolute;
         }
     }
@@ -28,5 +28,5 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: $luxbar-shadow;
+    box-shadow: var(--luxbar-shadow);
 }
