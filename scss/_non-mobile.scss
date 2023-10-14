@@ -1,3 +1,5 @@
+@import 'global-variables';
+
 @media screen and (min-width: $luxbar-breakpoint) {
     .#{$luxbar-css-prefix}-navigation {
         flex-flow: row;

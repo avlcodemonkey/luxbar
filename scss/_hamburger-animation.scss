@@ -1,3 +1,5 @@
+@import 'global-variables';
+
 .#{$luxbar-css-prefix}-checkbox {
     &:checked {
         + .#{$luxbar-css-prefix}-menu {
