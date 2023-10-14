@@ -30,7 +30,7 @@
         margin-right: auto;
     }
 
-    .dropdown {
+    .#{$luxbar-css-prefix}-dropdown {
         height: $luxbar-height;
 
         &:hover > ul {

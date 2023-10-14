@@ -7,7 +7,7 @@
 
 // ******* default dark *******
 .#{$luxbar-css-prefix}-menu,
-.#{$luxbar-css-prefix}-menu .dropdown ul {
+.#{$luxbar-css-prefix}-menu .#{$luxbar-css-prefix}-dropdown ul {
     background-color: var(--luxbar-color-bg);
     color: var(--luxbar-color-fg);
 }
