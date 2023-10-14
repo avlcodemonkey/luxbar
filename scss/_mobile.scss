@@ -135,12 +135,12 @@
 
     > a {
         &::after {
-            $expand-arrow-height: 5px;
+            $expand-arrow-height: 0.313rem;
 
             position: absolute;
             content: '';
-            right: 10px;
-            top: calc($luxbar-height / 2 - $expand-arrow-height + 1px);
+            right: 0.625rem;
+            top: calc($luxbar-height / 2 - $expand-arrow-height + 0.063rem);
             border-width: $expand-arrow-height $expand-arrow-height 0;
             border-color: transparent;
             border-style: solid;
@@ -156,7 +156,7 @@
         .#{$luxbar-css-prefix}-item {
             min-width: 100%;
             height: calc($luxbar-height / 2);
-            padding: 5px 10px 5px 40px;
+            padding: 0.313rem 0.625rem 0.313rem 4rem;
 
             a {
                 min-height: calc($luxbar-height / 2);
