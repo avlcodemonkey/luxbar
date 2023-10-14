@@ -14,7 +14,7 @@
 
 .#{$luxbar-css-prefix}-menu {
     .active,
-    .#{$luxbar-css-prefix}-item:hover {
+    li:hover {
         background-color: var(--luxbar-color-hl);
     }
 

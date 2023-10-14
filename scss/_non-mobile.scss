@@ -2,6 +2,14 @@
     .#{$luxbar-css-prefix}-navigation {
         flex-flow: row;
         justify-content: flex-end;
+
+        li {
+            border-top: 0;
+        }
+
+        li:last-child {
+            margin-right: 1rem;
+        }
     }
 
     .#{$luxbar-css-prefix}-hamburger {
@@ -16,13 +24,6 @@
         &:checked ~.#{$luxbar-css-prefix}-menu {
           height: $luxbar-height;
         }
-    }
-
-    .#{$luxbar-css-prefix}-menu {
-        .#{$luxbar-css-prefix}-item {
-            border-top: 0;
-        }
-
     }
 
     .#{$luxbar-css-prefix}-menu-right .#{$luxbar-css-prefix}-header {
@@ -42,7 +43,7 @@
         > ul {
             display: none;
 
-            .#{$luxbar-css-prefix}-item {
+            li {
                 padding: 0.313rem 0.625rem;
 
                 a {

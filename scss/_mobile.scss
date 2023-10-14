@@ -59,7 +59,7 @@
 }
 
 .#{$luxbar-css-prefix}-menu,
-.#{$luxbar-css-prefix}-item {
+.#{$luxbar-css-prefix}-navigation li {
     a {
         text-decoration: none;
         color: inherit;
@@ -67,7 +67,7 @@
     }
 }
 
-.#{$luxbar-css-prefix}-item {
+.#{$luxbar-css-prefix}-navigation li {
     height: $luxbar-height;
 
     a {
@@ -153,7 +153,7 @@
         list-style: none;
         padding: 0;
 
-        .#{$luxbar-css-prefix}-item {
+        li {
             min-width: 100%;
             height: calc($luxbar-height / 2);
             padding: 0.313rem 0.625rem 0.313rem 4rem;
