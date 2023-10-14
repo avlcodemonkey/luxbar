@@ -30,12 +30,3 @@
     z-index: 1000;
     box-shadow: $luxbar-shadow;
 }
-
-.#{$luxbar-css-prefix}-fixed-bottom {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: $luxbar-shadow;
-}
