@@ -130,7 +130,6 @@
     &:hover > ul {
         position: relative;
         display: block;
-        min-width: 100%;
     }
 
     > a {
@@ -147,20 +146,11 @@
 
     > ul {
         display: block;
-        overflow-x: hidden;
         list-style: none;
         padding: 0;
 
         li {
-            min-width: 100%;
-            height: calc(var(--luxbar-height) / 1.5);
-            padding: 0.313rem 0.625rem 0.313rem 4rem;
-
-            a {
-                min-height: calc(var(--luxbar-height) / 1.5);
-                line-height: calc(var(--luxbar-height) / 1.5);
-                padding: 0;
-            }
+            padding: 0 0.625rem 0 var(--luxbar-height);
         }
     }
 }

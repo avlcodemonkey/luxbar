@@ -8,10 +8,6 @@
         li {
             border-top: 0;
         }
-
-        li:last-child {
-            margin-right: 1rem;
-        }
     }
 
     .#{$luxbar-css-prefix}-hamburger {
@@ -46,7 +42,7 @@
             display: none;
 
             li {
-                padding: 0.313rem 0.625rem;
+                padding: 0 0.625rem;
 
                 a {
                     white-space: nowrap;
