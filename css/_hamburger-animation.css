@@ -1,0 +1,7 @@
+.luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger span::before {
+    transform: rotate(45deg);
+}
+
+.luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger span::after {
+    transform: rotate(-45deg);
+}

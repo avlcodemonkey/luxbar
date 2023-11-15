@@ -137,17 +137,9 @@ This will align the menu items at the very right of the navbar and will look som
 ![luxbar-menu-left](http://i.imgur.com/XrPVZZZ.png)
 
 ## Hamburger animation
-In mobile view (under 786px) there is an animated hamburger icon which transforms into an 'X' when you click it. There are 2 different animations for this: `luxbar-hamburger-spin`, `luxbar-hamburger-doublespin`. To set this you have to include the class name in the `.luxbar-hamburger` node to one of the listed options.
-
-### luxbar-hamburger-spin
-Please note that the blue highlight is only there because it was recorded in Chrome's mobile view, and won't be there on an actual phone.
+In mobile view (under 786px) there is an animated hamburger icon which transforms into an 'X' when you click it. Please note that the blue highlight is only there because it was recorded in Chrome's mobile view, and won't be there on an actual phone.
 
 ![luxbar-hamburger-spin](http://i.imgur.com/jjjowwe.gif)
-
-### luxbar-hamburger-doublespin
-Please note that the blue highlight is only there because it was recorded in Chrome's mobile view, and won't be there on an actual phone.
-
-![luxbar-hamburger-doublespin](http://i.imgur.com/4VjRVhf.gif)
 
 # Other
 

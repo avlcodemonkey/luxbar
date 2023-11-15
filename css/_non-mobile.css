@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+    .luxbar-navigation {
+        flex-flow: row;
+        justify-content: flex-end;
+    }
+
+    .luxbar-navigation li {
+        border-top: 0;
+    }
+
+    .luxbar-hamburger {
+        display: none;
+    }
+
+    .luxbar-checkbox:not(:checked) ~ .luxbar-menu {
+        overflow: visible;
+    }
+
+    .luxbar-checkbox:checked ~ .luxbar-menu {
+        height: var(--luxbar-height);
+    }
+
+    .luxbar-menu-right .luxbar-header {
+        margin-right: auto;
+    }
+
+    .luxbar-dropdown {
+        height: var(--luxbar-height);
+    }
+
+    .luxbar-dropdown:hover > ul {
+        position: absolute;
+        left: 0;
+        top: var(--luxbar-height);
+        padding: 0;
+    }
+
+    .luxbar-dropdown > ul {
+        display: none;
+    }
+
+    .luxbar-dropdown > ul li {
+        padding: 0 0.625rem;
+    }
+
+    .luxbar-dropdown > ul li a {
+        white-space: nowrap;
+    }
+}
