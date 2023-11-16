@@ -5,15 +5,12 @@
 }
 
 .luxbar-menu {
-    & .luxbar-active,
-    & li:hover {
+    .luxbar-active, & li:hover {
         background-color: var(--luxbar-color-hl);
     }
 
-    & .luxbar-hamburger {
-        & span,
-        & span::before,
-        & span::after {
+    .luxbar-hamburger {
+        & span, & span::before, & span::after {
             background-color: var(--luxbar-color-fg);
         }
     }

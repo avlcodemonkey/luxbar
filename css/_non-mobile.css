@@ -3,7 +3,7 @@
         flex-flow: row;
         justify-content: flex-end;
 
-        li {
+        & li {
             border-top: 0;
         }
     }
@@ -29,23 +29,23 @@
     .luxbar-dropdown {
         height: var(--luxbar-height);
 
+        > ul {
+            display: none;
+
+            & li {
+                padding: 0 0.625rem;
+
+                & a {
+                    white-space: nowrap;
+                }
+            }
+        }
+
         &:hover > ul {
             position: absolute;
             left: 0;
             top: var(--luxbar-height);
             padding: 0;
-        }
-
-        > ul {
-            display: none;
-
-            li {
-                padding: 0 0.625rem;
-
-                a {
-                    white-space: nowrap;
-                }
-            }
         }
     }
 }
