@@ -1,0 +1,13 @@
+/* customizable custom properties */
+:root {
+    --luxbar-color-bg: #3e63ad;
+    --luxbar-color-hl: #2d477d;
+    --luxbar-color-fg: #fff;
+    --luxbar-height: 3.625rem;
+    --luxbar-padding: 1.125rem 1.5rem 1.125rem 1.5rem;
+    --luxbar-transition: .6s ease;
+    --luxbar-hamburger-line-height: 0.125rem;
+    --luxbar-hamburger-width: 1.625rem;
+    --luxbar-shadow: 0 0.063rem 0.188rem rgba(#000, .12), 0 0.063rem 0.125rem rgba(#000, .24);
+    --luxbar-expand-arrow-height: 0.313rem;
+}
