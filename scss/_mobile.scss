@@ -38,13 +38,11 @@
     margin: 0;
 }
 
-.luxbar-menu,
-.luxbar-navigation li {
-    a {
-        text-decoration: none;
-        color: inherit;
-        cursor: pointer;
-    }
+.luxbar-menu a,
+.luxbar-navigation li a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .luxbar-navigation li {
