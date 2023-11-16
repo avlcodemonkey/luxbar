@@ -5,7 +5,8 @@ Featherweight, Responsive, CSS Only Navigation bar
 ![Screencap](http://i.imgur.com/0eGzsNt.gif)
 
 This fork is an attempt to modernize Luxbar by using
-- esbuild for faster builds
+- Native CSS functionality instead of SCSS
+- esbuild for faster builds for production
 - CSS custom properties instead of themes
 - Semantic HTML in favor of CSS classes
 - `rem` units instead of `px`
