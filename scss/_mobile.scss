@@ -1,5 +1,3 @@
-@import 'global-variables';
-
 %general-hamburger-span {
     display: block;
     height: var(--luxbar-hamburger-line-height);
@@ -18,7 +16,16 @@
     }
 }
 
-.#{$luxbar-css-prefix}-header {
+.luxbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: var(--luxbar-shadow);
+}
+
+.luxbar-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,31 +33,22 @@
     height: var(--luxbar-height);
 }
 
-.#{$luxbar-css-prefix}-menu-left {
-    .#{$luxbar-css-prefix}-navigation,
-    .#{$luxbar-css-prefix}-header {
-        justify-content: flex-start;
-    }
-}
-
-.#{$luxbar-css-prefix}-menu-right {
-    .#{$luxbar-css-prefix}-hamburger {
-        margin-left: auto;
-    }
-}
-
-.#{$luxbar-css-prefix}-brand {
+.luxbar-brand {
     font-size: 1.6rem;
     padding: var(--luxbar-padding);
 }
 
-.#{$luxbar-css-prefix}-menu {
+.luxbar-menu {
     min-height: var(--luxbar-height);
     transition: var(--luxbar-transition);
     width: 100%;
+
+    .luxbar-hamburger {
+        margin-left: auto;
+    }
 }
 
-.#{$luxbar-css-prefix}-navigation {
+.luxbar-navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -58,8 +56,8 @@
     margin: 0;
 }
 
-.#{$luxbar-css-prefix}-menu,
-.#{$luxbar-css-prefix}-navigation li {
+.luxbar-menu,
+.luxbar-navigation li {
     a {
         text-decoration: none;
         color: inherit;
@@ -67,7 +65,7 @@
     }
 }
 
-.#{$luxbar-css-prefix}-navigation li {
+.luxbar-navigation li {
     height: var(--luxbar-height);
 
     a {
@@ -76,7 +74,7 @@
     }
 }
 
-.#{$luxbar-css-prefix}-hamburger {
+.luxbar-hamburger {
     padding: var(--luxbar-padding);
     position: relative;
     cursor: pointer;
@@ -101,28 +99,28 @@
     }
 }
 
-.#{$luxbar-css-prefix}-checkbox {
+#luxbar-checkbox {
     display: none;
 
-    &:not(:checked) ~ .#{$luxbar-css-prefix}-menu {
+    &:not(:checked) ~ .luxbar-menu {
         overflow: hidden;
         height: var(--luxbar-height);
     }
 
-    &:checked ~ .#{$luxbar-css-prefix}-menu {
+    &:checked ~ .luxbar-menu {
         transition: height var(--luxbar-transition);
         height: 100vh;
         overflow: auto;
 
         li {
-            .#{$luxbar-css-prefix}-hamburger {
+            .luxbar-hamburger {
                 @extend %hamburger-lines;
             }
         }
     }
 }
 
-.#{$luxbar-css-prefix}-dropdown {
+.luxbar-dropdown {
     position: relative;
     height: auto;
     min-height: var(--luxbar-height);

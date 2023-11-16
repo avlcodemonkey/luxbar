@@ -11,7 +11,3 @@
     --luxbar-shadow: 0 0.063rem 0.188rem rgba(#000, .12), 0 0.063rem 0.125rem rgba(#000, .24);
     --luxbar-expand-arrow-height: 0.313rem;
 }
-
-/* can't use custom property for these */
-$luxbar-css-prefix: 'luxbar' !default;
-$luxbar-breakpoint: 768px;

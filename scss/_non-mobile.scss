@@ -1,7 +1,5 @@
-@import 'global-variables';
-
-@media screen and (min-width: $luxbar-breakpoint) {
-    .#{$luxbar-css-prefix}-navigation {
+@media screen and (min-width: 768px) {
+    .luxbar-navigation {
         flex-flow: row;
         justify-content: flex-end;
 
@@ -10,25 +8,25 @@
         }
     }
 
-    .#{$luxbar-css-prefix}-hamburger {
+    .luxbar-hamburger {
         display: none;
     }
 
-    .#{$luxbar-css-prefix}-checkbox {
-        &:not(:checked) ~ .#{$luxbar-css-prefix}-menu {
+    #luxbar-checkbox {
+        &:not(:checked) ~ .luxbar-menu {
             overflow: visible;
         }
 
-        &:checked ~ .#{$luxbar-css-prefix}-menu {
+        &:checked ~ .luxbar-menu {
             height: var(--luxbar-height);
         }
     }
 
-    .#{$luxbar-css-prefix}-menu-right .#{$luxbar-css-prefix}-header {
+    .luxbar-menu .luxbar-header {
         margin-right: auto;
     }
 
-    .#{$luxbar-css-prefix}-dropdown {
+    .luxbar-dropdown {
         height: var(--luxbar-height);
 
         &:hover > ul {

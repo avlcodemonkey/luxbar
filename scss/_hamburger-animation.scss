@@ -1,21 +1,7 @@
-@import 'global-variables';
-
-.#{$luxbar-css-prefix}-checkbox {
+#luxbar-checkbox {
     &:checked {
-        + .#{$luxbar-css-prefix}-menu {
-            .#{$luxbar-css-prefix}-hamburger-doublespin {
-                span {
-                    &::before {
-                        transform: rotate(225deg);
-                    }
-
-                    &::after {
-                        transform: rotate(-225deg);
-                    }
-                }
-            }
-
-            .#{$luxbar-css-prefix}-hamburger-spin {
+        + .luxbar-menu {
+            .luxbar-hamburger {
                 span {
                     &::before {
                         transform: rotate(45deg);

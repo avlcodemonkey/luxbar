@@ -33,13 +33,13 @@ Reference the built file
 Then use the HTML code below as a base and keep reading for options.
 
 ```html
-<div class="luxbar luxbar-static">
-    <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
-    <div class="luxbar-menu luxbar-menu-right">
+<div class="luxbar">
+    <input type="checkbox" id="luxbar-checkbox">
+    <div class="luxbar-menu">
         <ul class="luxbar-navigation">
             <li class="luxbar-header">
                 <a class="luxbar-brand" href="#">Brand</a>
-                <label class="luxbar-hamburger luxbar-hamburger-doublespin" for="luxbar-checkbox"> <span></span> </label>
+                <label class="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
             </li>
             <li class="luxbar-active"><a href="#">Home</a></li>
             <li class="luxbar-dropdown"><a href="#">Users</a>
@@ -103,51 +103,17 @@ Adding dropdown menus to your navbar is similar to adding normal items but inste
 ```
 
 # Style options
-At the moment there are 3 available style options: `luxbar-default`, `luxbar-static`, and `luxbar-fixed`. To set this you have to include the class name in the `.luxbar` node to one of the listed options.
-
-### luxbar-default
-This style will adopt the padding and margin options you apply to it's parent container and will look something like this:
-
-![luxbar-default](http://i.imgur.com/y7N0sHt.png)
-
-### luxbar-static
-This style will stay at to top of the page and will take up 100% of your page's width and will look something like this:
-
-![luxbar-static](http://i.imgur.com/XrPVZZZ.png)
-
-### luxbar-fixed
-This style will be always at the top of your screen even when you scroll down and will look something like this:
+This fork of luxbar supports only one style `luxbar-fixed`, instead of the three original.  This style will be always at the top of your screen even when you scroll down and will look something like this:
 
 ![luxbar-fixed](http://i.imgur.com/h6DBQsI.png)
 
 ## Leave out the brand
 If you want to leave out the brand from your navbar simply delete the `<a class="luxbar-brand" href="#">Brand</a>` part from your base module.
 
-## Alignment options
-At the moment there are 2 available alignement options: `luxbar-menu-left`, `luxbar-menu-right`. To set this you have to include the class name in the `.luxbar-menu` node to one of the listed options.
-
-### luxbar-menu-left
-This will align the menu items at the very left of the navbar and will look something like this:
-
-![luxbar-menu-left](http://i.imgur.com/UXjXsL0.png)
-
-### luxbar-menu-right
-This will align the menu items at the very right of the navbar and will look something like this:
-
-![luxbar-menu-left](http://i.imgur.com/XrPVZZZ.png)
-
 ## Hamburger animation
-In mobile view (under 786px) there is an animated hamburger icon which transforms into an 'X' when you click it. There are 2 different animations for this: `luxbar-hamburger-spin`, `luxbar-hamburger-doublespin`. To set this you have to include the class name in the `.luxbar-hamburger` node to one of the listed options.
-
-### luxbar-hamburger-spin
-Please note that the blue highlight is only there because it was recorded in Chrome's mobile view, and won't be there on an actual phone.
+In mobile view (under 786px) there is an animated hamburger icon which transforms into an 'X' when you click it.  This fork of luxbar only supports the single spin, not double spin. Please note that the blue highlight is only there because it was recorded in Chrome's mobile view, and won't be there on an actual phone.
 
 ![luxbar-hamburger-spin](http://i.imgur.com/jjjowwe.gif)
-
-### luxbar-hamburger-doublespin
-Please note that the blue highlight is only there because it was recorded in Chrome's mobile view, and won't be there on an actual phone.
-
-![luxbar-hamburger-doublespin](http://i.imgur.com/4VjRVhf.gif)
 
 # Other
 

@@ -1,0 +1,20 @@
+.luxbar-menu,
+.luxbar-menu .luxbar-dropdown ul {
+    background-color: var(--luxbar-color-bg);
+    color: var(--luxbar-color-fg);
+}
+
+.luxbar-menu {
+    .luxbar-active,
+    li:hover {
+        background-color: var(--luxbar-color-hl);
+    }
+
+    .luxbar-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: var(--luxbar-color-fg);
+        }
+    }
+}
