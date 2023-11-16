@@ -9,7 +9,7 @@ const args = {
     minify: true,
     platform: 'browser',
     sourcemap: true,
-    target: 'esnext',
+    target: 'ie11',
 };
 
 (async () => {
