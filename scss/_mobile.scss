@@ -99,14 +99,12 @@
         overflow: auto;
 
         li {
-            .luxbar-hamburger {
-                span {
-                    background-color: transparent;
+            .luxbar-hamburger span {
+                background-color: transparent;
 
-                    &::before,
-                    &::after {
-                        margin-top: 0;
-                    }
+                &::before,
+                &::after {
+                    margin-top: 0;
                 }
             }
         }
@@ -123,16 +121,14 @@
         display: block;
     }
 
-    > a {
-        &::after {
-            position: absolute;
-            content: '';
-            right: 0.625rem;
-            top: calc(var(--luxbar-height) / 2 - var(--luxbar-expand-arrow-height) + 0.063rem);
-            border-width: var(--luxbar-expand-arrow-height) var(--luxbar-expand-arrow-height) 0;
-            border-color: transparent;
-            border-style: solid;
-        }
+    > a::after {
+        position: absolute;
+        content: '';
+        right: 0.625rem;
+        top: calc(var(--luxbar-height) / 2 - var(--luxbar-expand-arrow-height) + 0.063rem);
+        border-width: var(--luxbar-expand-arrow-height) var(--luxbar-expand-arrow-height) 0;
+        border-color: transparent;
+        border-style: solid;
     }
 
     > ul {
