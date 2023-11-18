@@ -6,14 +6,20 @@ Featherweight, Responsive, CSS Only Navigation bar
 
 This fork is an attempt to modernize Luxbar by using
 - Native CSS functionality instead of SCSS
-- esbuild for faster builds for production
+- Use without a build step, or use esbuild to bundle/minify
 - CSS custom properties instead of themes
 - Semantic HTML in favor of CSS classes
 - `rem` units instead of `px`
 
 # Getting started
 
-Create build files using
+Use without a build step
+
+```html
+<link rel="stylesheet" href="css/luxbar.css">
+```
+
+Or create build files using
 
 ```
 npm run build
@@ -28,7 +34,7 @@ npm run watch
 Reference the built file
 
 ```html
-<link rel="stylesheet" href="luxbar.css">
+<link rel="stylesheet" href="build/luxbar.css">
 ```
 
 Then use the HTML code below as a base and keep reading for options.
@@ -104,7 +110,7 @@ Adding dropdown menus to your navbar is similar to adding normal items but inste
 ```
 
 # Style options
-This fork of luxbar supports only one style `luxbar-fixed`, instead of the three original.  This style will be always at the top of your screen even when you scroll down and will look something like this:
+This fork of luxbar supports only one  of the original styles `luxbar-fixed`, instead of all three.  This style will be always at the top of your screen even when you scroll down and will look something like this:
 
 ![luxbar-fixed](http://i.imgur.com/h6DBQsI.png)
 
