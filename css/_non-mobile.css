@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (width > 768px) {
     .luxbar-navigation {
         flex-flow: row;
         justify-content: flex-end;

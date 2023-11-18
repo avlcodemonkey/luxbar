@@ -1,5 +1,5 @@
-@import url('_global-variables.css');
-@import url('_mobile.css');
-@import url('_non-mobile.css');
-@import url('_hamburger-animation.css');
-@import url('_theme.css');
+@import '_global-variables.css';
+@import '_mobile.css';
+@import '_non-mobile.css';
+@import '_hamburger-animation.css';
+@import '_theme.css';

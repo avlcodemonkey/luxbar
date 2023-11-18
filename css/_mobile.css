@@ -24,10 +24,6 @@
     min-height: var(--luxbar-height);
     transition: var(--luxbar-transition);
     width: 100%;
-
-    .luxbar-hamburger {
-        margin-left: auto;
-    }
 }
 
 .luxbar-navigation {
@@ -58,6 +54,7 @@
     padding: var(--luxbar-padding);
     position: relative;
     cursor: pointer;
+    margin-left: auto;
 
     & span {
         display: block;
