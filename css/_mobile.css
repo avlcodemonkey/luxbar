@@ -81,37 +81,6 @@
     }
 }
 
-.luxbar-dropdown {
-    position: relative;
-    height: auto;
-    min-height: var(--luxbar-height);
-
-    > a::after {
-        position: absolute;
-        content: '';
-        right: 0.625rem;
-        top: calc(var(--luxbar-height) / 2 - var(--luxbar-expand-arrow-height) + 0.063rem);
-        border-width: var(--luxbar-expand-arrow-height) var(--luxbar-expand-arrow-height) 0;
-        border-color: transparent;
-        border-style: solid;
-    }
-
-    > ul {
-        display: block;
-        list-style: none;
-        padding: 0;
-
-        & li {
-            padding: 0 0.625rem 0 var(--luxbar-height);
-        }
-    }
-
-    &:hover > ul {
-        position: relative;
-        display: block;
-    }
-}
-
 #luxbar-checkbox {
     display: none;
 

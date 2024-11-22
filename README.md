@@ -49,13 +49,6 @@ Then use the HTML code below as a base and keep reading for options.
                 <label class="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
             </li>
             <li class="luxbar-active"><a href="#">Home</a></li>
-            <li class="luxbar-dropdown"><a href="#">Users</a>
-                <ul>
-                    <li><a href="#">Max</a></li>
-                    <li><a href="#">Edgar</a></li>
-                    <li><a href="#">John</a></li>
-                </ul>
-            </li>
         </ul>
     </div>
 </div>
@@ -95,19 +88,6 @@ Or the material cyan theme:
 
 # Adding menu items
 The base module includes three menu items. You can have more by adding `<li><a href="#">Menu item name</a></li>` to the luxbar-navigation list. Adding the classname `luxbar-active` to the luxbar-item will make it visually selected. You can have multiple selected items.
-
-# Dropdown menu
-Adding dropdown menus to your navbar is similar to adding normal items but instead you should use a nested element like this:
-
-```html
-<li class="dropdown"><a href="#">Dropdown Menu</a>
-    <ul>
-        <li><a href="#">Dropdown Item 1</a></li>
-        <li><a href="#">Dropdown Item 2</a></li>
-        <li><a href="#">Dropdown Item 3</a></li>
-    </ul>
-</li>
-```
 
 # Style options
 This fork of luxbar supports only one  of the original styles `luxbar-fixed`, instead of all three.  This style will be always at the top of your screen even when you scroll down and will look something like this:

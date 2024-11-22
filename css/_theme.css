@@ -1,5 +1,4 @@
-.luxbar-menu,
-.luxbar-menu .luxbar-dropdown ul {
+.luxbar-menu {
     background-color: var(--luxbar-color-bg);
     color: var(--luxbar-color-fg);
 }
