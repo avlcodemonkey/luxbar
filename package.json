@@ -1,36 +1,37 @@
 {
-  "name": "luxbar",
-  "version": "0.4.0",
-  "description": "Featherweight, Responsive, CSS Only Navigation Bar",
-  "scripts": {
-    "build": "node build.mjs",
-    "watch": "node build.mjs --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/avlcodemonkey/luxbar.git"
-  },
-  "keywords": [
-    "CSS",
-    "Navbar",
-    "Menu",
-    "Navigation bar"
-  ],
-  "author": "avlcodemonkey",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/avlcodemonkey/luxbar/issues"
-  },
-  "files": [
-    "build/",
-    "scss/",
-    "README.md",
-    "LICENSE"
-  ],
-  "devDependencies": {
-    "esbuild": "^0.19.4",
-    "eslint": "^8.50.0",
-    "stylelint": "^15.11.0",
-    "stylelint-config-standard": "^34.0.0"
-  }
+    "name": "luxbar",
+    "version": "1.0.1",
+    "description": "Featherweight, Responsive, CSS Only Navigation Bar",
+    "homepage": "https://github.com/avlcodemonkey/luxbar/",
+    "scripts": {
+        "build": "node build.mjs",
+        "watch": "node build.mjs --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/avlcodemonkey/luxbar.git"
+    },
+    "keywords": [
+        "CSS",
+        "Navbar",
+        "Menu",
+        "Navigation bar"
+    ],
+    "author": "avlcodemonkey",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/avlcodemonkey/luxbar/issues"
+    },
+    "files": [
+        "build/",
+        "scss/",
+        "README.md",
+        "LICENSE"
+    ],
+    "devDependencies": {
+        "esbuild": "^0.19.12",
+        "eslint": "^8.57.1",
+        "stylelint": "^15.11.0",
+        "stylelint-config-standard": "^34.0.0"
+    }
 }
